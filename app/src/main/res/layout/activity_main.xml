@@ -7,13 +7,27 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/qr_code"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/qr_code"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/qr_image"
-        android:contentDescription="@string/qr_code" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/qr_image" />
+
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/button_back_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="RedundantDescriptionCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.buttonBack?.setOnClickListener{
-            this.finish()
+        binding.buttonClose?.setOnClickListener{
+            finish()
         }
     }
 }

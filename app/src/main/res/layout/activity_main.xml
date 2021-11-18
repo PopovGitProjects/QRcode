@@ -20,14 +20,14 @@
         app:srcCompat="@drawable/qr_image" />
 
     <ImageView
-        android:id="@+id/button_back"
+        android:id="@+id/button_close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/button_back_img"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:ignore="RedundantDescriptionCheck" />
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/close_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

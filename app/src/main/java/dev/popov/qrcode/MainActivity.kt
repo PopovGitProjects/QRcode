@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
         binding.generate?.setOnClickListener {
-            generateQR("Done is real work!!!")
+            generateQR("Done, it really works!!!")
         }
     }
     private fun generateQR(url: String){

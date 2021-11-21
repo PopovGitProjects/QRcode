@@ -31,6 +31,7 @@
             android:id="@+id/qr_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:background="@color/white"
             android:contentDescription="@string/qr_code"
             app:srcCompat="@drawable/qr_image" />

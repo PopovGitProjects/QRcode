@@ -3,6 +3,9 @@
     <string name="qr_code">QR code</string>
     <string name="button_back_img">button back</string>
     <string name="close_button">Close button</string>
-    <string name="generate">Generate</string>
+    <string name="generate">Generate QR</string>
     <string name="button_add_qr_code">Button add QR code</string>
+    <string name="save_button">Save</string>
+    <string name="text_generate_qr">Enter text to generate QR</string>
+    <string name="scan_qr">Scan QR</string>
 </resources>

@@ -17,7 +17,6 @@ import dev.popov.qrcode.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var launcher: ActivityResultLauncher<Intent>? = null
-    private var callback: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,13 +31,15 @@ class MainActivity : AppCompatActivity() {
         binding.generate?.setOnClickListener {
             if (binding.inputText?.text.toString() != ""){
                 generateQR(binding.inputText?.text.toString())
+                binding.scannerResult?.text = binding.inputText?.text
             }
         }
         launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
                 result: ActivityResult ->
             if (result.resultCode == Activity.RESULT_OK){
-                callback = result.data?.getStringExtra("key")
+                val callback = result.data?.getStringExtra("key")
                 binding.scannerResult?.text = callback
+                callback?.let { generateQR(it) }
             }
         }
         binding.scanButton?.setOnClickListener {

@@ -8,4 +8,5 @@
     <string name="save_button">Save</string>
     <string name="text_generate_qr">Enter text to generate QR</string>
     <string name="scan_qr">Scan QR</string>
+    <string name="qr_code_text">QR code text</string>
 </resources>
